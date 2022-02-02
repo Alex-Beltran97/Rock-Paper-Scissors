@@ -1,9 +1,9 @@
 const data = {
     "arrayGame" : ["Rock","Paper","Scissors"],
     "arrayImage": [
-        "../Public/Images/Rock.PNG",
-        "../Public/Images/Paper.PNG",
-        "../Public/Images/Scissors.PNG",
+        "./Images/Rock.PNG",
+        "./Images/Paper.PNG",
+        "./Images/Scissors.PNG",
     ]
 }
 
