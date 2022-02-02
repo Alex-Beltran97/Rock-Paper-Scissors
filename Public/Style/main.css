@@ -5,10 +5,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --background:#95d5b2;
+    --primary-color:#40916c;
+    --secondary-color:#d9ed92;
+    --terciary-color:#168aad;
+    --letters:#f1faee;
+    --shadow1:5px 5px 10px var(--primary-color);
+    --shadow2:5px 5px 10px var(--letters);
+    --radius:15px;
+}
+
 body{
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-color: var(--background);
     display: grid;
     place-items: center;
 }
@@ -16,20 +27,23 @@ body{
 .app{
     width: 80%;
     height: 600px;
-    background-color: red;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow2);
 }
 
 .container{
-    background-color: blue;
+    background-color: var(--secondary-color);
     width: 80%;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-radius: var(--radius);
 }
 
 .container_item{
@@ -49,30 +63,34 @@ img{
 }
 
 .container_item:hover{
-    background-color: LightGreen;
+    background-color: var(--primary-color);
 }
 
 .result{
     width: 80%;
     height: 200px;
-    background-color: royalblue;
+    background-color: var(--terciary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: var(--radius);
 }
 
 .result__item{
-    background-color: salmon;
+    background-color: var(--letters);
     width: 150px;
     height: 150px;
     margin: 10px 30px;
     display: grid;
     place-items: center;
+    border-radius: var(--radius);
 }
 
 .prompt__item--result{
-    color: white;
+    color: var(--letters);
     font-size: 50px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px var(--primary-color);
 }
 
 .prompt__item--button{
@@ -81,6 +99,12 @@ img{
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: var(--shadow1);
+}
+
+.prompt__item--button:hover{
+    background-color: var(--terciary-color);
+    color: var(--letters);
 }
 
 .hidden{
