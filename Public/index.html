@@ -10,17 +10,27 @@
 </head>
 <body>
     <main class="app">
-        <div class="container">
-            <button class="container_item container_item--rock">Rock</button>
-            <button class="container_item container_item--paper ">Paper</button>
-            <button class="container_item container_item--scissors">Scissors</button>
-        </div>
         <div class="result">
             <p class="result__item result__item--user"></p>
             <p class="result__item result__item--pc"></p>
         </div>
+        <div class="container">
+            <button class="container_item container_item--rock">
+                <img src="./Images/Rock.PNG" alt="Rock">
+            </button>
+            <button class="container_item container_item--paper ">
+                <img src="../Public/Images/Paper.PNG" alt="Paper">
+            </button>
+            <button class="container_item container_item--scissors">
+                <img src="../Public/Images/Scissors.PNG" alt="Scissors">
+            </button>
+        </div>
+        <div class="prompt hidden container">
+            <p class="prompt__item prompt__item--result"></p>
+            <button class="prompt__item prompt__item--button">Volver a jugar</button>
+        </div>
     </main>
     <!-- scripst -->
-    <script src="../Src/index.js"></script>
+    <script src="../Src/index.js" type="module"></script>
 </body>
 </html>

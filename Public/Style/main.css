@@ -36,6 +36,20 @@ body{
     width: 150px;
     height: 150px;
     padding: 4px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container_item:hover{
+    background-color: LightGreen;
 }
 
 .result{
@@ -54,4 +68,21 @@ body{
     margin: 10px 30px;
     display: grid;
     place-items: center;
+}
+
+.prompt__item--result{
+    color: white;
+    font-size: 50px;
+}
+
+.prompt__item--button{
+    font-size: 50px;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }
