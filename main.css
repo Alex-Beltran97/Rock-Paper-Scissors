@@ -21,8 +21,8 @@ body{
     height: 100vh;
     background-color: var(--background);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .app{
@@ -105,9 +105,10 @@ img{
 
 .prompt__item--button:hover{
     background-color: var(--terciary-color);
-    color: var(--letters);
+    color: var(--letters)
 }
 
 .hidden{
-    display: none;
+    display: none
 }
+
