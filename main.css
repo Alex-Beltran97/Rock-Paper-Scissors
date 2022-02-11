@@ -87,6 +87,16 @@ img{
     border-radius: var(--radius);
 }
 
+.prompt{
+    width: 80%;
+    height: 200px;
+    background-color: var(--secondary-color);
+    display: flex;
+    border-radius: var(--radius);
+    justify-content: space-around;
+    align-items: center;
+}
+
 .prompt__item--result{
     color: var(--letters);
     font-size: 50px;
@@ -112,3 +122,44 @@ img{
     display: none
 }
 
+@media (max-width:500px){
+    .app{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .result{
+        width: 90%;
+    }
+
+    .result__item{
+        width: 100px;
+        height: 50%;
+    }
+
+    .container{
+        width: 90%;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .container_item{
+        width: 90px;
+        height: 90px;
+    }
+    img{
+        padding: 10px;
+    }
+
+    .prompt{
+        width: 90%;
+        height: 40%;
+        flex-direction: column;
+    }
+
+    .prompt__item--button{
+        width: 80%;
+        height: 120px;
+        font-size: 35px;
+    }
+}
